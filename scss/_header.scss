@@ -1,0 +1,160 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    .header__top {
+        background: #030A15;
+        padding: 12px 15px;
+        .header__top__left {
+            ul {
+                list-style: none;
+                margin-bottom: 0;
+                font-size: 14px;
+                    li {
+                        display: inline-block;
+                        margin-right: 25px;
+                        a {
+                            color: #fff;
+                                i {
+                                    padding-right: 5px;
+                                    color: #FE8C12;
+                                }
+                        }
+                    }
+            }
+        }
+        .header__top__right {
+            ul {
+                list-style: none;
+                margin-bottom: 0;
+                font-size: 14px;
+                    li {
+                        color: #fff;
+                        display: inline-block;
+                        margin-right: 15px;
+                        transition: all 0.3s ease-in-out;
+                        cursor: pointer;
+                            &:hover {
+                                color: #FE8C12;
+                            }
+                    }
+            }
+        }
+    }
+
+    .header__bottom {
+        background-color: #fff;
+        padding-left: 15px;
+        .header__logo {
+            a {
+                img {
+                    max-width: 155px;
+                }
+            }
+        }
+
+        .header__navigator {
+            width: 100%;
+            background: #fff;
+                .navbar {
+                    
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link {
+                                color: #030A15;
+                                font-size: 14px;
+                                line-height: 24px;
+                                font-weight: 700;
+                                padding: 38px 25px;
+                                transition: all 0.3s ease-in-out;
+                                text-transform: uppercase;
+                                    &:hover {
+                                        color: #FE8C12;
+                                    }
+                                    
+                            }
+
+                            .nav-link:hover::before {
+                               background-color: #FE8C12;
+                               display: none;
+                            }
+                            
+                            .nav-link::before {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                right: 15px;
+                                width: 2px;
+                                height: 8px;
+                                background-color: #030A15;
+                                transition: all 0.3s ease;
+                                
+                            }
+
+                            .nav-link::after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                right: 12px;
+                                width: 8px;
+                                height: 2px;
+                                background-color: #030A15;
+
+                            }
+
+
+                            .nav-link:hover::after {
+                                background-color: #FE8C12;
+                             }
+
+                        }
+                    }
+
+                   
+                }
+
+                .header__search {
+                    .search-icon {
+                        cursor: pointer;
+                        margin-left: 30px;
+                        margin-right: 25px;
+                    }
+                }
+
+                .header__contact {
+                    background: #FE8C12;
+                    padding: 21px 30px;
+                        .contact-icon {
+                            i {
+                                color: #fff;
+                                font-size: 30px;
+                                margin-right: 20px;
+                            }
+                        }
+
+                        .contact-details {
+                            span {
+                                color: #030A15;
+                                text-transform: uppercase;
+                                font-size: 14px;
+                                line-height: 29px;
+                                font-weight: 700;
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 22px;
+                                line-height: 32px;
+                                font-weight: 700;
+                            }
+                        }
+                    
+                }
+
+        }
+        
+    }
+}

@@ -1,0 +1,103 @@
+.about {
+    padding: 130px 0px;
+    .about__left {
+        margin-left: 65px;
+        margin-right: 50px;
+        margin-bottom: 80px;
+        position: relative;
+        .about__image {
+            img {
+                max-width: 100%;
+                width: 470px;
+            }
+        }
+    
+        .about__small__image {
+            position: absolute;
+            bottom: -80px;
+            left: -60px;
+            border: 17px solid #ffff;
+            max-width: 250px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .about__right {
+        
+        .section__top {
+            position: relative;
+            display: inline-block;
+            padding-left: 70px;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 500;
+            color: #fe8c12;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .section__top::before {
+            content: "";
+            background: #fe8c12;
+            width: 60px;
+            height: 2px;
+            position: absolute;
+            bottom: 13px;
+            left: 0;
+        }
+        h2 {
+            font-size: 48px;
+            line-height: 62px;
+            color: #030a15;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .section__desc {
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 26px;
+            color: #686c73;
+            font-weight: 400;
+        }
+
+        .about__right-list {
+            margin-bottom: 40px;
+            p {
+                color: #030a15;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 26px;
+                    i {
+                        color: #fe8c12;
+                    }
+            }
+        }
+
+        .about__right-bottom {
+            border-top: 1px solid #e6e7e8;
+            padding-top: 40px;
+                button {
+                    background: #fe8c12;
+                    font-size: 16px;
+                    padding: 0 39px;
+                    text-align: center;
+                    font-weight: 700;
+                    color: #fff;
+                    text-transform: uppercase;
+                    height: 60px;
+                    line-height: 60px;
+                    border: none;
+                        i {
+                            padding-left: 10px;
+                        }
+                }
+                .signature__image {
+                    width: 185px;
+                    padding-top: 8px;
+                }
+        }
+    }
+    
+}

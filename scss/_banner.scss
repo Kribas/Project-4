@@ -1,0 +1,71 @@
+.banner {
+    .carousel-inner {
+        .banner__image {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            img {
+                width: 1519px;
+                height: 750px;
+            }
+        }
+    
+        .banner__contents {
+            position: absolute;
+            width: 100%;
+            right: 0px;
+            top: 0;
+            top: 40%;
+            z-index: 9;
+
+                span {
+                    color: #fe8c12;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+                h1 {
+                    color: #fff;
+                    font-size: 90px;
+                    line-height: 110px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+
+                .banner__buttons {
+                    .button-theme {
+                        button {
+                        background-color: #fe8c12;
+                        color: #fff;
+                        font-size: 16px;
+                        padding: 0 39px;
+                        text-align: center;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        height: 60px;
+                        line-height: 60px;
+                        border: none;
+                        margin-right: 20px;
+                        }
+
+                    }
+                    .readMore-btn {
+                        button {
+                            background-color: #fff;
+                            border: none;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            padding: 0 39px;
+                            text-align: center;
+                            font-weight: 700;
+                            height: 60px;
+                            line-height: 60px;
+                        }
+                    }
+                }
+        }
+    }
+    
+    
+}
