@@ -1,0 +1,38 @@
+.counter__section {
+    background: #030a15;
+    padding-top: 130px;
+    padding-bottom: 260px;
+        .counter__item {
+            border-right: 1px dashed #686c73;
+            border-radius: 2px;
+                .counter__icon {
+                    i {
+                        font-size: 45px;
+                        color: #fff;
+                        width: 100px;
+                        height: 100px;
+                        line-height: 100px;
+                        display: inline-block;
+                        background: #fe8c12;
+                        border-radius: 50%;
+                    }
+                }
+                .counter__content {
+                    h2 {
+                        color: #fff;
+                        padding: 10px;
+                        font-size: 48px;
+                        line-height: 62px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                    }
+                    
+                    p {
+                        color: #fff;
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: 400;
+                    }
+                }
+        }
+}

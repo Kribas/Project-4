@@ -1,0 +1,122 @@
+.experience {
+    margin-top: -130px;
+    .experience__bg {
+        background: #fff;
+        box-shadow: 0 30px 50px rgba(0,0,0,0.05);
+        padding: 30px 20px;
+    }
+
+    .experience__left {
+        .work__experience {
+            margin-bottom: 15px;
+            display: inline-block;
+            position: relative;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 500;
+            color: #fe8c12;
+            text-transform: uppercase;
+            padding-left: 70px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 60px;
+                    height: 2px;
+                    left: 0;
+                    bottom: 13px;
+                    background: #fe8c12;
+                }
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            font-size: 48px;
+            color: #030a15;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+
+    .experience-skill-item {
+        margin-bottom: 30px;
+        
+        .item-content {
+            position: relative;
+                h5 {
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 700;
+                    color: #030a15;
+                }
+                .experience-skill-counter {
+                    position: absolute;
+                    top: 0;
+                    left: 60%;
+                    color: #fe8c12;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 600;
+
+                }
+        }
+        .experience__area-skill-inner {
+            width: 65%;
+            height: 8px;
+            background: #e6e7e8;
+            margin-top: 10px;
+            position: relative;
+            border-radius: 0;
+                .experience__area-skill-bar {
+                    height: 8px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #fe8c12;
+                    transition: 20s;
+                    border-radius: 0;
+                }
+        }
+    }
+
+    .experience__right {
+        .experience__right-image {
+            position: relative;
+                img {
+                    max-width: 100%;
+                    transition: all 0.4s ease-out 0s;
+                }
+                .image-content {
+                    position: absolute;
+                    left: -50px;
+                    bottom: 60px;
+                    background: #f5f5f5;
+                    box-shadow: 0 30px 50px rgba(0,0,0,0.05);
+                    padding: 30px 40px;
+                    border-left: 2px solid #fe8c12;
+                        h2 {
+                            font-size: 48px;
+                            line-height: 62px;
+                            color: #030a15;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            font-size: 16px;
+                            line-height: 26px;
+                            font-weight: 700;
+                            color: #030a15;
+                            text-transform: uppercase;
+                            padding-top: 10px;
+                        }
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            bottom: -45px;
+                            left: -2px;
+                            border-top: 45px solid #e8e8e8;
+                            border-left: 50px solid transparent;
+                        }
+                }
+        }
+    }
+}

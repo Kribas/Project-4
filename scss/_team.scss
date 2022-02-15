@@ -1,15 +1,62 @@
 .team {
+    padding-bottom: 130px;
     .team__title {
-        margin-bottom: 20px;
+        margin-bottom: 60px;
+            h2 {
+                font-size: 48px;
+                line-height: 62px;
+                color: #030a15;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+
+            .our__team {
+                display: inline-block;
+                position: relative;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 500;
+                color: #fe8c12;
+                text-transform: uppercase;
+                padding-left: 70px;
+                margin-bottom: 15px;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 60px;
+                        height: 2px;
+                        left: 0;
+                        bottom: 13px;
+                        background: #fe8c12;
+                    }
+            }
     }
     .team__item {
-        
+        position: relative;
+        overflow: hidden;
+          &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            background: rgba(255,255,255,0.7);
+            width: 40%;
+            height: 100%;
+            left: 30px;
+            top: 0;
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100px) skewX(-15deg);
+          }
+
+          
+
         .team-image {
-            
             img {
                 filter: grayscale(100%);
                 transition: all 0.4s ease-in-out;
             }
+
+            
         }
         .team-content {
             background: #fff;
@@ -59,14 +106,23 @@
                         }
                     }
                 }
-        }
+        }          
 
-        &:hover {
+          &:hover {
             .team-image {
                 img {
                     filter: grayscale(0%);
                 }
             }
+
+              &::after {
+                transform: translateX(535px) skewX(-15deg);  
+                opacity: 1;
+                transition: 1.8s;
+              }
         }
+
     }
+
+
 }
