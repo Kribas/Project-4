@@ -1,0 +1,181 @@
+.footer {
+    background-image: url(https://bioven.netlify.app/assets/img/footer.png);
+    background-color: #030a15;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 103px;
+        .footer__left {
+            background: linear-gradient(rgba(53,59,68,0.3), rgba(53,59,68,0.3));
+            padding: 120px 37px;
+                .footer-logo {
+                    margin-bottom: 20px;
+                    img {
+                        width: 100%;
+                        max-width: 155px;
+                    }
+                }
+                p {
+                    color: #e6e7e8;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                        li {
+                            margin-bottom: 15px;
+                            color: #e6e7e8;
+                                i {
+                                    color: #fe8c12;
+                                    margin-right: 15px;
+                                }
+                        }
+                }
+        }
+
+        .footer__mid {
+            padding: 120px 37px;
+            .our-services {
+                h4 {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 800;
+                }
+                ul {
+                    list-style: none;
+                    margin: 30px 0;
+                    padding: 0;
+                        li {
+                            margin-bottom: 15px;
+                            color: #e6e7e8;
+                            transition: all 0.3s ease-in-out;
+                            cursor: pointer;
+                                &:hover {
+                                    color: #fe8c12;
+                                    padding-left: 2px;
+                                }
+                             
+                        }
+                }
+            }
+
+            .quick-links {
+                h4 {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 800;
+                }
+                ul {
+                    list-style: none;
+                    margin: 30px 0;
+                    padding: 0;
+                        li {
+                            margin-bottom: 15px;
+                            color: #e6e7e8;
+                            transition: all 0.3s ease-in-out;
+                            cursor: pointer;
+                                &:hover {
+                                    color: #fe8c12;
+                                    padding-left: 2px;
+                                }
+                             
+                        }
+                }
+            }
+        }
+
+        .subscribe {
+            padding: 120px 37px;
+            h4 {
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 800;
+            }
+
+            p {
+                color: #e6e7e8;
+                margin-bottom: 30px;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 400;
+            }
+
+            .subscribe-input {
+                position: relative;
+                    input {
+                        box-shadow: none;
+                        border: 0px;
+                        outline: none;
+                        height: 60px;
+                        width: 100%;
+                        padding-left: 20px;
+                        padding-right: 80px;
+                        font-size: 14px;
+                        background: #fff;
+                    }
+                    button {
+                        position: absolute;
+                        display: inline-block;
+                        height: 60px;
+                        width: 60px;
+                        right: 0;
+                        top: 0;
+                        text-align: center;
+                        background: #fe8c12;
+                        border: none;
+                        color: #fff;
+                        font-size: 20px;
+                        line-height: 60px;
+                    }
+            }
+        }
+
+        .footer__copyright {
+            border-top: 1px solid #1b2230;
+            padding: 35px 0px;
+                .copyright__left {
+                    p {
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: 400;
+                        color: #fff;
+                    }
+                }
+                .copyright__right {
+                    text-align: right;
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                                li {
+                                    display: inline-block;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    font-weight: 500;
+                                    margin-right: 15px;
+                                    padding-right: 15px;
+                                    border-right: 2px solid #fff;
+                                    opacity: 70%;
+                                    transition: all 0.3s ease-in-out;
+                                    cursor: pointer;
+                                        &:hover {
+                                            color: #fe8c12;
+                                            opacity: 1;
+                                        }
+                                }
+                        }
+                }
+        }
+
+        
+}
