@@ -90,7 +90,7 @@
                       aria-expanded="false"
                       aria-label="Toggle navigation"
                     >
-                      <span class="navbar-toggler-icon"></span>
+                      <span><i class="bi bi-list navbar-toggler-icon"></i></span>
                     </button>
                     <div
                       class="collapse navbar-collapse"
@@ -98,19 +98,64 @@
                     >
                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                          <a class="nav-link" href="#">Home</a>
+                          <a class="nav-link text-decoration-none" href="#">Home</a>
+                          <ul>
+                            <li><a href="#">Action</a></li>
+                            <li>
+                              <a href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a href="#">Something else here</a>
+                            </li>
+                          </ul>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link" href="#">Services</a>
+                          <ul>
+                            <li><a href="#">Action</a></li>
+                            <li>
+                              <a href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a href="#">Something else here</a>
+                            </li>
+                          </ul>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link" href="#"> Page </a>
+                          <ul>
+                            <li><a href="#">Action</a></li>
+                            <li>
+                              <a href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a href="#">Something else here</a>
+                            </li>
+                          </ul>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link" href="#">News</a>
+                          <ul>
+                            <li><a href="#">Action</a></li>
+                            <li>
+                              <a href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a href="#">Something else here</a>
+                            </li>
+                          </ul>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link" href="#">Contact</a>
+                          <ul>
+                            <li><a href="#">Action</a></li>
+                            <li>
+                              <a href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a href="#">Something else here</a>
+                            </li>
+                          </ul>
                         </li>
                       </ul>
                     </div>
@@ -140,73 +185,52 @@
     </section>
 
     <section class="banner">
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+      <div class="banner__body">
+        <div id="owl" class="owl-carousel">
+          <div class="banner-item">
             <div class="banner__image">
-              <img
+                <img
+                class="img-fluid"
                 src="https://bioven.netlify.app/assets/img/banner-1.jpg"
-                class="d-block w-100"
                 alt="Banner Image"
               />
             </div>
+            
             <div class="banner__contents text-center">
               <span>We're the best</span>
               <h1>Provide Expert Advice</h1>
               <div class="banner__buttons d-flex justify-content-center">
-                <div class="button-theme">
-                  <button>QUOTE NOW <i class="bi bi-arrow-right"></i></button>
-                </div>
-                <div class="readMore-btn">
-                  <button>READ MORE <i class="bi bi-arrow-right"></i></button>
-                </div>
+                  <button class="quoteNow-btn">QUOTE NOW <i class="bi bi-arrow-right"></i></button>
+                  <button class="readMore-btn">READ MORE <i class="bi bi-arrow-right"></i></button>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="banner-item">
             <div class="banner__image">
-              <img
+                <img
+                class="img-fluid"
                 src="https://bioven.netlify.app/assets/img/banner-2.jpg"
-                class="d-block w-100"
                 alt="Banner Image"
               />
+
+              
             </div>
+            
             <div class="banner__contents text-center">
               <span>We're the best</span>
               <h1>business bioven</h1>
               <div class="banner__buttons d-flex justify-content-center">
-                <div class="button-theme">
-                  <button>QUOTE NOW <i class="bi bi-arrow-right"></i></button>
-                </div>
-                <div class="readMore-btn">
-                  <button>READ MORE <i class="bi bi-arrow-right"></i></button>
-                </div>
+                  <button class="quoteNow-btn">QUOTE NOW <i class="bi bi-arrow-right"></i></button>
+                  <button class="readMore-btn">READ MORE <i class="bi bi-arrow-right"></i></button>
               </div>
             </div>
+
+
+            
           </div>
+          
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        
       </div>
     </section>
 
@@ -1150,3 +1174,31 @@
     <script src="./js/script.js"></script>
   </body>
 </html>
+
+
+
+<!-- <div class="banner__contents text-center">
+  <span>We're the best</span>
+  <h1>Provide Expert Advice</h1>
+  <div class="banner__buttons d-flex justify-content-center">
+    <div class="button-theme">
+      <button>QUOTE NOW <i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div class="readMore-btn">
+      <button>READ MORE <i class="bi bi-arrow-right"></i></button>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="banner__contents text-center">
+  <span>We're the best</span>
+  <h1>business bioven</h1>
+  <div class="banner__buttons d-flex justify-content-center">
+    <div class="button-theme">
+      <button>QUOTE NOW <i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div class="readMore-btn">
+      <button>READ MORE <i class="bi bi-arrow-right"></i></button>
+    </div>
+  </div>
+</div> -->

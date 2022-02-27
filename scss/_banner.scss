@@ -1,71 +1,183 @@
-.banner {
-    .carousel-inner {
-        .banner__image {
-            background-position: center center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            img {
-                width: 1519px;
-                height: 750px;
-            }
-        }
+.banner {  
     
-        .banner__contents {
-            position: absolute;
-            width: 100%;
-            right: 0px;
-            top: 0;
-            top: 40%;
-            z-index: 9;
+    .banner__body {
 
-                span {
-                    color: #fe8c12;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                }
-                h1 {
-                    color: #fff;
-                    font-size: 90px;
-                    line-height: 110px;
-                    font-weight: 800;
-                    text-transform: uppercase;
-                    margin-left: 20px;
-                    margin-right: 20px;
-                }
-
-                .banner__buttons {
-                    .button-theme {
-                        button {
-                        background-color: #fe8c12;
-                        color: #fff;
-                        font-size: 16px;
-                        padding: 0 39px;
-                        text-align: center;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        height: 60px;
-                        line-height: 60px;
-                        border: none;
-                        margin-right: 20px;
-                        }
-
+        .owl-carousel {
+            position: relative;
+            .owl-prev {
+                left: 50px;
+                top: 50%;
+                position: absolute;
+                background: #fe8c12;
+                border-radius: 50%;
+                opacity: 0;
+                width: 40px;
+                height: 40px;
+                color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background-color: #ffff;
+                        color: #030a15;
                     }
-                    .readMore-btn {
-                        button {
-                            background-color: #fff;
-                            border: none;
+                
+            }
+            
+            .owl-next {
+                right: 50px;
+                top: 50%;
+                position: absolute;
+                background: #fe8c12;
+                border-radius: 50%;
+                opacity: 0;
+                width: 40px;
+                height: 40px;
+                line-height: 20px;
+                color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background-color: #ffff;
+                        color: #030a15;
+                    }
+            }
+            
+            
+        }
+        
+        .banner-item {
+            .banner__image {
+                img {
+                    height: 750px;
+                }
+
+            }
+
+            
+
+            
+            
+            .banner__contents {
+                position: absolute;
+                width: 100%;
+                right: 0px;
+                top: 0;
+                top: 40%;
+    
+                    span {
+                        color: #fe8c12;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                    h1 {
+                        color: #fff;
+                        font-size: 90px;
+                        line-height: 110px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+    
+                    .banner__buttons {
+                        .quoteNow-btn {
+                            background-color: #fe8c12;
+                            color: #fff;
                             font-size: 16px;
-                            text-transform: uppercase;
                             padding: 0 39px;
                             text-align: center;
+                            position: relative;
                             font-weight: 700;
+                            text-transform: uppercase;
+                            transition: all 0.4s ease-in-out;
+                            overflow: hidden;
+                            z-index: 3;
                             height: 60px;
                             line-height: 60px;
+                            border: none;
+                            margin-right: 20px;
+                                &::before {
+                                    position: absolute;
+                                    background: #fff;
+                                    content: '';
+                                    top: 50%;
+                                    left: 50%;
+                                    width: 100%;
+                                    height: 0%;
+                                    border: #fe8c12;
+                                    transform: translate(-50%, -50%) rotate(55deg);
+                                    z-index: -1;
+                                    transition: all 0.6s ease-in-out;
+                                }
+
+                                &:hover {
+                                    border-color: #fff;
+                                    color: #fe8c12;
+                                }
+
+                                &:hover::before {
+                                    height: 380%;
+                                    
+                                }
+                           
+                        }
+
+                        
+                        .readMore-btn {
+                                background-color: #fff;
+                                border: none;
+                                position: relative;
+                                overflow: hidden;
+                                z-index: 3;
+                                font-size: 16px;
+                                text-transform: uppercase;
+                                padding: 0 39px;
+                                text-align: center;
+                                transition: all 0.4s ease-in-out;
+                                color: #fe8c12;
+                                font-weight: 700;
+                                height: 60px;
+                                line-height: 60px;
+                                    &::before {
+                                        position: absolute;
+                                        background: #fe8c12;
+                                        content: '';
+                                        top: 50%;
+                                        left: 50%;
+                                        width: 100%;
+                                        height: 0%;
+                                        border: #fe8c12;
+                                        transform: translate(-50%, -50%) rotate(55deg);
+                                        z-index: -1;
+                                        transition: all 0.6s ease-in-out;
+                                    }
+                                    &:hover {
+                                        border-color: #fe8c12;
+                                        color: #ffff;
+                                    }
+    
+                                    &:hover::before {
+                                        height: 380%;
+                                        
+                                    }
+
                         }
                     }
-                }
+            }
+        }
+
+        &:hover .owl-prev {
+            opacity: 1;
+        }
+        &:hover .owl-next {
+            opacity: 1;
         }
     }
+    
+        
+   
     
     
 }
