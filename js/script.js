@@ -2,15 +2,28 @@ const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
-  $(window).on("load", function() {
-    /*==========  Progress Bar  ==========*/
-		if ($('.experience__area-skill-bar').length) {
-			$('.experience__area-skill-bar').appear(function () {
-				var el = $(this);
-				var percent = el.data('width');
-				$(el).css('width', percent + '%');
-			}, {
-				accY: 0
-			});
-		};
-  })
+  /**
+   * Back to top button
+   */
+   $(window).on("scroll", function() {
+	if($(window).scrollTop() > 100) {
+		$(".back-to-top").addClass("active");
+	} else {
+		
+	   $(".back-to-top").removeClass("active");
+	}
+});
+
+$(window).on("scroll", function() {
+	if($(window).scrollTop() > 100) {
+		$(".header__bottom").addClass("header-sticky");
+		$(".logo").addClass("logo-sticky");
+
+	} else {
+		
+	   $(".header__bottom").removeClass("header-sticky");
+	   $(".logo").removeClass("logo-sticky");
+	}
+});
+
+
